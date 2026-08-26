@@ -1,0 +1,63 @@
+generated: '2026-08-26'
+method: probed
+source: >-
+  Live anonymous GET of each /.well-known/ path on every Semios host named in
+  apis.yml (website, Hub application, Hub API), 2026-08-26.
+note: >-
+  Semios serves no /.well-known/ documents on any host. semios.com is WordPress
+  and returns its themed 404 page for every path. hub.semios.com is a
+  single-page application whose catch-all answers HTTP 200 with the same HTML
+  shell for every /.well-known/* path - that is an SPA false positive, not a
+  document, and every such row is recorded status 200 with note "SPA shell, not
+  a document" and treated as a miss. hub-api.semios.com returns a genuine
+  application-level 404 ("Path not Found") for every path probed. No WellKnown
+  or SecurityTxt pointer is emitted, because nothing was served.
+hosts:
+- host: semios.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: hub-api.semios.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: hub.semios.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: SPA shell (text/html), not a document - treated as a miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    note: SPA shell (text/html), not a document - treated as a miss
+- host: help.semios.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: support.semios.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: blog.semios.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404

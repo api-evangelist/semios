@@ -1,0 +1,36 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  semios.com page inventory via https://semios.com/wp-json/wp/v2/pages, DNS
+  probe of status.semios.com, and a search of blog.semios.com, 2026-08-26.
+versioning:
+  scheme: unpublished
+  note: >-
+    No public versioning policy. No version path segment could be observed on
+    hub-api.semios.com because every anonymous path 404s.
+deprecation:
+  policy_published: false
+  sunset_header: unknown
+  note: >-
+    No deprecation policy, no RFC 8594 Sunset/Deprecation header commitment, and
+    no deprecated-operation list - there is no published contract to derive one
+    from.
+status_page:
+  published: false
+  probes:
+  - url: https://status.semios.com/
+    status: NXDOMAIN
+  note: >-
+    status.semios.com does not resolve. No status or uptime page was found on
+    semios.com or hub.semios.com.
+sla:
+  published: false
+  note: >-
+    No public SLA. Support is a customer-success channel - support@semios.com,
+    plus regional phone lines published at https://semios.com/support/.
+support:
+  url: https://semios.com/support/
+  email: support@semios.com
+note: >-
+  Nothing here earns a StatusPage or Deprecation pointer - both are recorded
+  absences, not presences.

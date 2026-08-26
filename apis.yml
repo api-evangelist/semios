@@ -1,23 +1,109 @@
 aid: semios
 name: Semios
-description: 'Semios is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Semios (legally SemiosBio Technologies Inc., Vancouver, British Columbia,
+  founded 2010 by Michael Gilbert) is a precision-agriculture company that
+  operates a large in-canopy IoT sensor network for permanent crops - almonds,
+  apples, cherries, citrus, grapes, pears, pistachios, stone fruit and walnuts.
+  Its sensors report climate, soil moisture, insect trap counts and plant-stress
+  readings on roughly ten-minute intervals, and its platform layers degree-day
+  models, disease and frost risk models and machine learning on top of that feed
+  to drive insect pest management (including variable-rate aerosol mating
+  disruption), disease management, frost management, irrigation and water
+  management, plant-stress monitoring, and alerting and reporting. Growers and
+  agronomists consume it through the Semios Hub web and mobile applications,
+  backed by the hub-api.semios.com service. Semios acquired Agworld, Altrac and
+  Centricity, and in October 2024 the group unified those brands under the
+  Almanac name, with Semios continuing as the sensing and crop-protection brand.
+  Semios does not operate a public developer portal - the Hub API is customer
+  and partner authenticated, and integrations such as the WiseConn irrigation
+  integration are arranged directly.
 url: https://raw.githubusercontent.com/api-evangelist/semios/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-source-note: >-
+  Surfaced through a Forge Global secondary-market listing
+  (https://forgeglobal.com/semios_stock/). That venue listing is not the
+  company website and is not carried as a Website pointer.
 specificationVersion: '0.20'
+image: https://semios.com/wp-content/uploads/2020/10/logo.svg
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
-- Company
-apis: []
+- Agriculture
+- AgTech
+- Precision Agriculture
+- Crop Management
+- Pest Management
+- IoT
+- Sensors
+- Irrigation
+- Weather
+- Canada
+apis:
+- name: Semios Hub API
+  description: >-
+    The authenticated service behind the Semios Hub grower application at
+    hub.semios.com. The host is live and answers on HTTPS, but every anonymous
+    path returns an application-level "Path not Found" and Semios publishes no
+    developer portal, API reference or machine-readable contract for it. Access
+    is arranged through Semios customer success and partner agreements.
+  humanURL: https://hub.semios.com/
+  baseURL: https://hub-api.semios.com
+  tags:
+  - Crop Management
+  - Sensors
+  properties:
+  - type: SignUp
+    url: https://hub.semios.com/login
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/semios-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/semios_stock/
+  url: https://semios.com/
+- type: Blog
+  url: https://blog.semios.com/
+- type: Support
+  url: https://semios.com/support/
+- type: GitHubOrganization
+  url: https://github.com/semiosBIO
+- type: Login
+  url: https://hub.semios.com/login
+- type: LLMsTxt
+  url: llms/semios-llms.txt
+- type: Plans
+  url: plans/semios-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/semios-rate-limits.yml
+- type: Lifecycle
+  url: lifecycle/semios-lifecycle.yml
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 8
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    Semios runs a live production API host at hub-api.semios.com that answers
+    every anonymous path with an application-level "Path not Found", and the
+    only human entry point is the Semios Hub login at hub.semios.com - there is
+    no developer portal, no API reference and no machine-readable contract
+    anywhere on semios.com, so the Hub API is reachable only with an active
+    grower tenant arranged through customer success or a partner agreement.
+  evidence:
+  - url: https://hub-api.semios.com/openapi.json
+    status: 404
+  - url: https://semios.com/developers/
+    status: 404
+  - url: https://hub.semios.com/login
+    status: 200
+  - url: https://semios.com/.well-known/api-catalog
+    status: 404
+  checked: '2026-08-26'

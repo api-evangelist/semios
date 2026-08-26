@@ -1,0 +1,14 @@
+generated: '2026-08-26'
+method: searched
+source: https://semios.com/talk-to-sales/
+plan_count: 0
+plans: []
+note: >-
+  Semios publishes no pricing page and no plan tiers. The full page inventory of
+  semios.com (read from its WordPress REST index at
+  https://semios.com/wp-json/wp/v2/pages, 18 pages) contains no pricing page;
+  https://semios.com/pricing/ returns 404. The commercial motion is a sales
+  conversation - https://semios.com/talk-to-sales/ (HTTP 200) and
+  https://semios.com/where-to-buy-mating-disruption/ - sized per acre and per
+  deployment, with in-field services quoted per grower. There is no self-serve
+  sign-up and no published API pricing.

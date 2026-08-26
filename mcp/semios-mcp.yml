@@ -1,0 +1,18 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  Search of Semios' own hosts, its GitHub organization (github.com/semiosBIO),
+  npm and PyPI for a hosted or installable MCP server, 2026-08-26.
+status: none
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+note: >-
+  Semios ships no MCP server. No hosted endpoint was found, no npm or PyPI
+  package exists under the Semios name, and the semiosBIO GitHub organization
+  contains no MCP project. No candidate tool list could be derived either,
+  because Semios publishes no OpenAPI, GraphQL or other machine-readable
+  contract to derive one from. No MCPServer pointer is emitted - this file
+  records an absence.

@@ -1,0 +1,16 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  Live probe of https://hub-api.semios.com (root plus /api, /v1, /api/v1,
+  /health, /status, /version) and a search of every public Semios surface for a
+  documented limit, 2026-08-26.
+limit_count: 0
+limits: []
+headers: []
+note: >-
+  Semios documents no rate limits. There is no developer portal or API reference
+  to publish them in, and no rate-limit response headers could be observed:
+  hub-api.semios.com answers every anonymous path with an application-level 404
+  ("Path not Found") carrying no X-RateLimit-*, RateLimit-* or Retry-After
+  header, so nothing about the runtime signal can be established without an
+  authenticated customer credential. An honest zero, not an unmeasured one.

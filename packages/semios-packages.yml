@@ -1,0 +1,27 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  npm registry search (registry.npmjs.org/-/v1/search?text=semios), PyPI
+  (pypi.org/pypi/semios/json, pypi.org/pypi/semiosbio/json), and the public
+  repository list of Semios' own GitHub organization
+  (api.github.com/orgs/semiosBIO/repos), 2026-08-26.
+package_count: 0
+official_package_count: 0
+packages: []
+note: >-
+  Semios publishes no first-party client library on any package registry. npm
+  returned no first-party match for "semios"; PyPI returned 404 for both
+  "semios" and "semiosbio". The semiosBIO GitHub organization holds nine public
+  repositories and none of them is a Semios API client - eight are forks of
+  third-party projects (zephyr, amazon-freertos, aws-iot-device-sdk-embedded-C,
+  RestKit, geokit, bootstrap-sass, ymodem, k8s-deploy-buildkite-plugin,
+  reflecting the firmware and IoT side of the sensor network) and the ninth,
+  modus-integration, is documentation for the Agworld lab-results integration
+  rather than a package. No SDKs pointer is emitted because there is no SDK.
+registries_checked:
+- registry: npm
+  result: no first-party package
+- registry: pypi
+  result: 404 for semios and semiosbio
+- registry: github
+  result: 9 public repos in semiosBIO, no client library
