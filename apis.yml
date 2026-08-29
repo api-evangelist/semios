@@ -25,6 +25,17 @@ x-source-note: >-
   Surfaced through a Forge Global secondary-market listing
   (https://forgeglobal.com/semios_stock/). That venue listing is not the
   company website and is not carried as a Website pointer.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 specificationVersion: '0.20'
 image: https://semios.com/wp-content/uploads/2020/10/logo.svg
 created: '2026-08-26'
