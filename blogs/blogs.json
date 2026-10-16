@@ -2,6 +2,13 @@
   "repo": "semios",
   "feeds": [
     {
+      "source": "https://blog.semios.com/",
+      "feed_url": "https://blog.semios.com/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://semios.com/",
       "feed_url": "https://semios.com/",
       "title": "",
@@ -10,5 +17,5 @@
     }
   ],
   "post_count": 10,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
