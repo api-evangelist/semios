@@ -64,5 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Semios is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/semios_stock/
+Semios (legally SemiosBio Technologies Inc., Vancouver, British Columbia, founded 2010 by Michael Gilbert) is a precision-agriculture company that operates a large in-canopy IoT sensor network for permanent crops - almonds, apples, cherries, citrus, grapes, pears, pistachios, stone fruit and walnuts. Its sensors report climate, soil moisture, insect trap counts and plant-stress readings on roughly ten-minute intervals, and its platform layers degree-day models, disease and frost risk models and machine learning on top of that feed to drive insect pest management (including variable-rate aerosol mating disruption), disease management, frost management, irrigation and water management, plant-stress monitoring, and alerting and reporting. Growers and agronomists consume it through the Semios Hub web and mobile applications, backed by the hub-api.semios.com service. Semios acquired Agworld, Altrac and Centricity, and in October 2024 the group unified those brands under the Almanac name, with Semios continuing as the sensing and crop-protection brand. Semios does not operate a public developer portal - the Hub API is customer and partner authenticated, and integrations such as the WiseConn irrigation integration are arranged directly.
+
+**Areas:** Agriculture · AgTech · Precision Agriculture · Crop Management · Pest Management · IoT · Sensors · Irrigation · Weather · Canada
+
+## Semios on APIs.io
+
+Everything profiled for Semios is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/semios/](https://apis.io/providers/semios/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Semios Hub API](https://apis.io/apis/semios/semios-hub-api/) — The authenticated service behind the Semios Hub grower application at hub.semios.com. The host is live and answers on HTTPS, but every anonymous path…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Semios Domain Security](https://apis.io/security/semios/semios-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Semios Plans Pricing](https://apis.io/plans/semios/semios-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Semios Rate Limits](https://apis.io/rate-limits/semios/semios-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://semios.com/)
+- [Support](https://semios.com/support/)
+- [Blog](https://blog.semios.com/)
+- [GitHub](https://github.com/semiosBIO)
+
+## API Evangelist rating
+
+**Kin Score 7.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/semios/](https://apis.io/providers/semios/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Semios: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/semios/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
